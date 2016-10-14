@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="sass/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="sass/customize/index.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="sass/customize/show.css" media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="highcharts/js/highcharts.js"></script>
+    <script type="text/javascript" src="highcharts/js/modules/exporting.js"></script>
+    <script type="text/javascript" src="highcharts/js/modules/heatmap.js"></script>
+    <script type="text/javascript" src="highcharts/js/highcharts-more.js"></script>
+    <script type="text/javascript" src="highcharts/js/modules/solid-gauge.js"></script>
+    <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+    <script type="text/javascript" src="js/customize/init.js"></script>
+    <script type="text/javascript" src="js/date_picker/picker.date.js"></script>
+    <script type="text/javascript" src="js/date_picker/picker.js"></script>
+    <script type="text/javascript" src="js/customize/show.js"></script>
+</head>
+
+
+
+
+<body>
+
+
+<header>
+    <ul id="slide-out" class="side-nav fixed collapsible"
+        data-collapsible="accordion">
+        <li><img src="img/logo.png" class="responsive-img"></li>
+        <li>
+            <div class="active collapsible-header waves-effect waves-teal">Function 1</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li class="active"><a class="waves-effect waves-teal" href="#!">function 1</a></li>
+                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="waves-effect waves-teal" href="activity-list.html">function 1</a></li>
+                    <li><a class="waves-effect waves-teal" href="activity-manage.html">function 2</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
+                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
+                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
+                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</header>
+
+
+<div class="main">
+    <nav>
+        <ul id="dropdownTop" class="dropdown-content">
+            <li><a class="waves-effect waves-teal" href="#!">one</a></li>
+            <li><a class="waves-effect waves-teal" href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a class="waves-effect waves-teal" href="#!">three</a></li>
+        </ul>
+
+        <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+
+            <ul class="right">
+                <!-- Dropdown Trigger -->
+                <li>
+                    <a class="dropdown-button waves-effect" href="#!" data-activates="dropdownTop" data-beloworigin="true">
+                        <i class="material-icons">more_vert
+                        </i>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" data-activates="slide-out" class="waves-effect button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card exercise-card">
+                    <div class="card-image">
+                        <div class="row" style="padding-left: 0; margin-bottom: 0">
+                            <div class="col m3">
+                                <input style="margin-left: 20px; margin-bottom: 0;width: 130px" type="date" class="datepicker" placeholder="10 October,2016">
+                            </div>
+                            <div class="col offset-m8 m1" style="height: 45px">
+                                <a class="lighten-3 grey-text text-darken-2 tooltipped"
+                                   data-position="left" data-delay="50" data-tooltip="Update the data">
+                                    <i class="material-icons" style="margin-top: 15px">update</i></a>
+                            </div>
+                        </div>
+
+                        <div class="activator" id="exercise" style="min-width:400px;height:400px"></div>
+                    </div>
+                    <br>
+                    <div class="divider"></div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">More Info</span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">运动详情<i class="material-icons right">close</i></span>
+                        <div class="row" style="margin-bottom: 5px">
+                            <div class="col m6">
+                                <div id="container-speed" style="width:350px;height:200px"></div>
+                            </div>
+                            <div class="col m6">
+                                <div class="row info-row" style="padding-top: 15px">
+                                    <div class="col m6">
+                                        <i class="material-icons tooltipped"
+                                           data-position="right" data-delay="50" data-tooltip="运动时间"
+                                        >timer</i>
+                                        <p style="margin-top: 0px;margin-bottom: 0px"> 1.5 h</p>
+                                    </div>
+                                    <div class="col m6">
+                                        <i class="material-icons tooltipped"
+                                           data-position="right" data-delay="50" data-tooltip="行走路程"
+                                        >directions_walk</i>
+                                        <p style="margin-top: 0px;margin-bottom: 0px"> 5.0 KM </p>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="row info-row">
+                                    <div class="col m6">
+                                        <i class="material-icons tooltipped"
+                                           data-position="right" data-delay="50" data-tooltip="行走步数"
+                                        >local_dining</i>
+                                        <p style="margin-top: 0px;margin-bottom: 0px"> 12304 steps </p>
+                                    </div>
+                                    <div class="col m6">
+                                        <i class="material-icons tooltipped"
+                                           data-position="right" data-delay="50" data-tooltip="消耗大卡"
+                                        >local_bar</i>
+                                        <p style="margin-top: 0px;margin-bottom: 0px"> 12304 KJ </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="divider"></div>
+                        <div class="row" style="margin-top: 32px">
+                            <div class="col m12">
+                                <div id="container-week" style="min-width:750px;height:230px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="card exercise-card">
+                    <div class="card-image">
+                        <div id="container-heatmap" style="padding-top: 25px;min-width: 400px; height: 500px"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+
+
+
+<!--Import jQuery before materialize.js-->
+</body>
+</html>

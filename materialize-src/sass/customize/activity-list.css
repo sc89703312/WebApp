@@ -1,0 +1,27 @@
+.banner-classify {
+  margin-bottom: 0; }
+
+.container-tags {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+li .collection-item {
+  padding-bottom: 0;
+  min-height: 42px;
+  height: 60px; }
+
+.main-title {
+  font-size: 1.4rem; }
+
+.modal {
+  max-height: 100% !important;
+  overflow-y: hidden !important;
+  height: 100%; }
+
+@media only screen and (max-width: 992px) {
+  .test {
+    margin-bottom: 10px; } }
+
+/*# sourceMappingURL=activity-list.css.map */

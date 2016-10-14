@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="sass/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="sass/customize/index.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="sass/customize/activity-manage.css" media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+    <script type="text/javascript" src="js/customize/activity-manage.js"></script>
+    <script type="text/javascript" src="js/customize/init.js"></script>
+    <script type="text/javascript" src="js/date_picker/picker.date.js"></script>
+    <script type="text/javascript" src="js/date_picker/picker.js"></script>
+</head>
+
+
+
+
+<body>
+
+
+<header>
+    <ul id="slide-out" class="side-nav fixed collapsible"
+        data-collapsible="accordion">
+        <li><img src="img/logo.png" class="responsive-img"></li>
+        <li>
+            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
+                    <li><a class="waves-effect waves-teal" href="show.html">function 2</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="active collapsible-header waves-effect waves-teal">Function 1</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="waves-effect waves-teal" href="activity-list.html">function 1</a></li>
+                    <li class="active"><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
+                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
+                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+            <div class="collapsible-body">
+                <ul>
+                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
+                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</header>
+
+
+<div class="main">
+    <nav>
+        <ul id="dropdownTop" class="dropdown-content">
+            <li><a class="waves-effect waves-teal" href="#!">one</a></li>
+            <li><a class="waves-effect waves-teal" href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a class="waves-effect waves-teal" href="#!">three</a></li>
+        </ul>
+
+        <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+
+            <ul class="right">
+                <!-- Dropdown Trigger -->
+                <li>
+                    <a class="dropdown-button waves-effect" href="#!" data-activates="dropdownTop" data-beloworigin="true">
+                        <i class="material-icons">more_vert
+                        </i>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" data-activates="slide-out" class="waves-effect button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="row">
+            <div class="col s12 m9 l9">
+                <div class="row">
+                    <div class="col hide-on-small-only m2"></div>
+                    <div class="col s12 m10">
+                        <h3 class="red-text text-accent-1 banner-classify">Created Activities</h3>
+                        <div id="create" class="section scrollspy">
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn modal-trigger" href="#modaladd"><i class="material-icons left">cloud</i>Modify</a>
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px" href="#modalmembers">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn modal-trigger" href="#modaladd"><i class="material-icons left">cloud</i>Modify</a>
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px" href="#modalmembers">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn modal-trigger" href="#modaladd"><i class="material-icons left">cloud</i>Modify</a>
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px" href="#modalmembers">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn modal-trigger" href="#modaladd"><i class="material-icons left">cloud</i>Modify</a>
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px" href="#modalmembers">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn modal-trigger" href="#modaladd"><i class="material-icons left">cloud</i>Modify</a>
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px" href="#modalmembers">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn modal-trigger" href="#modaladd"><i class="material-icons left">cloud</i>Modify</a>
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px" href="#modalmembers">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="red-text text-accent-1 banner-classify">Participated Activities</h3>
+                        <div id="participate" class="section scrollspy">
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" href="#modalresult" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Results</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" href="#modalresult" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Results</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" href="#modalresult" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Results</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" href="#modalresult" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Results</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" href="#modalresult" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Results</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" href="#modalresult" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Results</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="red-text text-accent-1 banner-classify">Activities to start</h3>
+                        <div id="ready" class="section scrollspy">
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn"><i class="material-icons left">cloud</i>Exit</a>
+                                        <a href="#modalmembers" class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn"><i class="material-icons left">cloud</i>Exit</a>
+                                        <a href="#modalmembers" class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn"><i class="material-icons left">cloud</i>Exit</a>
+                                        <a href="#modalmembers" class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn"><i class="material-icons left">cloud</i>Exit</a>
+                                        <a href="#modalmembers" class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn"><i class="material-icons left">cloud</i>Exit</a>
+                                        <a href="#modalmembers" class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section scrollspy">
+                                <div class="card">
+                                    <div class="card-content" style="padding-bottom: 16px">
+                                        <div class="row">
+                                            <div class="main-title cyan-text text-lighten-2">
+                                                Main Title
+                                                <div class="chip" style="margin-top: 2px;float: right">
+                                                    <img src="img/avatar.png" alt="Contact Person">
+                                                    Jane Doe
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timer</i><div style="font-size: 16px">start-time: 10/12</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">timelapse</i><div style="font-size: 16px">during-time: 24h</div></a>
+                                            </div>
+                                            <div style="padding-left: 0" class="col m4 s12 test">
+                                                <a class="grey-text text-darken-1"><i class="material-icons left" style="margin-right: 3px">directions_run</i><div style="font-size: 16px">member: 24/100</div></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 32px;margin-bottom: 0; padding-bottom: 0">
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                            <div class="chip">Single<i class="close material-icons">directions_run</i></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-action">
+                                        <a class="waves-effect cyan lighten-2 waves-light btn"><i class="material-icons left">cloud</i>Exit</a>
+                                        <a href="#modalmembers" class="waves-effect grey lighten-3 grey-text text-darken-2 btn modal-trigger" style="margin-left: 15px">
+                                            <i class="material-icons left">cloud</i>Members</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal modal-fixed-footer" id="modaladd" style="width: 400px">
+                            <div class="modal-content">
+                                <form>
+                                    <div class="row">
+                                        <div class="input-field">
+                                            <input id="main-title" type="text" class="validate">
+                                            <label for="main-title">Main Title</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m2" style="padding-left: 0">
+                                            Type_1:
+                                        </div>
+                                        <div class="col m3">
+                                            <div>
+                                                <input class="with-gap" name="group-1" type="radio" id="type1">
+                                                <label for="type1">Type_1</label>
+                                            </div>
+                                        </div>
+                                        <div class="col m3">
+                                            <div>
+                                                <input class="with-gap" name="group-1" type="radio" id="type2">
+                                                <label for="type2">Type_1</label>
+                                            </div>
+                                        </div>
+                                        <div class="col m3">
+                                            <div>
+                                                <input class="with-gap" name="group-1" type="radio" id="type3">
+                                                <label for="type3">Type_1</label>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m2" style="padding-left: 0">
+                                            Type_1:
+                                        </div>
+                                        <div class="col m3">
+                                            <div>
+                                                <input class="with-gap" name="group-2" type="radio" id="type4">
+                                                <label for="type4">Type_1</label>
+                                            </div>
+                                        </div>
+                                        <div class="col m3">
+                                            <div>
+                                                <input class="with-gap" name="group-2" type="radio" id="type5">
+                                                <label for="type5">Type_1</label>
+                                            </div>
+                                        </div>
+                                        <div class="col m3">
+                                            <div>
+                                                <input class="with-gap" name="group-2" type="radio" id="type6">
+                                                <label for="type6">Type_1</label>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m5" style="padding-left: 0">
+                                            <input type="date" class="datepicker" placeholder="Start-Time:">
+                                        </div>
+                                        <div class="col m1 center-align" style="height: 66px">
+                                            <div style="padding-top: 15px">-</div>
+                                        </div>
+                                        <div class="col m5" style="padding-right: 0">
+                                            <input type="date" class="datepicker" placeholder="End-Time:">
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m2" style="padding-left: 0">
+                                            Type_2:
+                                        </div>
+                                        <div class="col m9" style="padding-left: 0; padding-right: 0">
+                                            <div class="row">
+                                                <div class="col m4">
+                                                    <div style="margin-left: 3px">
+                                                        <input type="checkbox" id="test5" />
+                                                        <label for="test5">Type_1</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col m4">
+                                                    <div style="margin-left: 3px">
+                                                        <input type="checkbox" id="test6" />
+                                                        <label for="test6">Type_1</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col m4">
+                                                    <div style="margin-left: 3px">
+                                                        <input type="checkbox" id="test7" />
+                                                        <label for="test7">Type_1</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col m4">
+                                                    <div style="margin-left: 3px">
+                                                        <input type="checkbox" id="test8" />
+                                                        <label for="test8">Type_1</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col m4">
+                                                    <div style="margin-left: 3px">
+                                                        <input type="checkbox" id="test9" />
+                                                        <label for="test9">Type_1</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m2" style="padding-left: 0">
+                                            Bouns:
+                                        </div>
+                                        <div class="col m10">
+                                            <div class="switch">
+                                                <label>
+                                                    Off
+                                                    <input type="checkbox">
+                                                    <span class="lever"></span>
+                                                    On
+                                                </label>
+                                            </div>
+                                            <div class="input-field col s12">
+                                                <select>
+                                                    <option value="" disabled selected>Choose bouns quantity</option>
+                                                    <option value="1">$ 100</option>
+                                                    <option value="2">$ 1, 000</option>
+                                                    <option value="3">$1, 000, 000</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="modal-action modal-close waves-effect waves-teal btn-flat">Agree</a>
+                            </div>
+
+                        </div>
+                        <div class="modal modal-fixed-footer" id="modalmembers" style="width:400px">
+                            <div class="modal-content">
+                                Members:
+                                <ul class="collection">
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <i class="material-icons circle">folder</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <i class="material-icons circle green">insert_chart</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <i class="material-icons circle red">play_arrow</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <i class="material-icons circle red">play_arrow</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <i class="material-icons circle red">play_arrow</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <i class="material-icons circle red">play_arrow</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <i class="material-icons circle red">play_arrow</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <i class="material-icons circle red">play_arrow</i>
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="modal-action modal-close waves-effect waves-teal btn-flat">Agree</a>
+                            </div>
+                        </div>
+                        <div class="modal modal-fixed-footer" id="modalresult" style="width:400px">
+                            <div class="modal-content">
+                                Members:
+                                <ul class="collection">
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">#1</a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">#1</a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">#1</a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">#1</a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">#1</a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">#1</a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">#1</a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">#1</a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">#1</a>
+                                    </li>
+                                    <li class="collection-item avatar" style="padding-bottom: 0; min-height: 42px; height: 60px">
+                                        <img src="img/avatar.png" alt="" class="circle">
+                                        <span class="title">Title</span>
+                                        <p>First Line
+                                        </p>
+                                        <a href="#!" class="secondary-content">#1</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="modal-action modal-close waves-effect waves-teal btn-flat">Agree</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col hide-on-small-only m3 l3">
+                <div class="toc-wrapper pin-top">
+                    <ul class="section table-of-contents">
+                        <li><a href="#create">Created</a></li>
+                        <li><a href="#participate">Participated</a></li>
+                        <li><a href="#ready">To begin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+
+
+<!--Import jQuery before materialize.js-->
+</body>
+</html>
