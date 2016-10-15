@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,WAAW;EACT,MAAM,EAAE,CAAC;EACT,4BAAgB;IACd,MAAM,EAAE,CAAC;;AAIb,OAAO;EACL,KAAK,EAAE,IAAI",
+"sources": ["community.scss"],
 "names": [],
 "file": "community.css"
 }

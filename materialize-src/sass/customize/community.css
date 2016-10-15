@@ -1,3 +1,9 @@
+.collection {
+  border: 0; }
+  .collection .collection-item {
+    border: 0; }
 
+.pinned {
+  width: auto; }
 
 /*# sourceMappingURL=community.css.map */
