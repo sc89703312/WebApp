@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAKA,WAAW;EACT,MAAM,EAAE,GAAG;EAEX,4BAAgB;IACd,MAAM,EAAE,GAAG",
+"sources": ["user-homepage.scss"],
 "names": [],
 "file": "user-homepage.css"
 }
