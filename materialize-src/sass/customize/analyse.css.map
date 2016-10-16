@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,OAAO;EACL,YAAY,EAAE,IAAI",
+"sources": ["analyse.scss"],
 "names": [],
 "file": "analyse.css"
 }

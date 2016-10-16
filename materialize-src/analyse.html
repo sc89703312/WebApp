@@ -6,73 +6,70 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="sass/materialize.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="sass/customize/index.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="sass/customize/" media="screen,projection"/>
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/bin/materialize.min.js"></script>
     <script type="text/javascript" src="js/customize/init.js"></script>
+    <script type="text/javascript" src="js/customize/analyse.js"></script>
+    <script type="text/javascript" src="highcharts/js/highcharts.js"></script>
+    <script type="text/javascript" src="highcharts/js/modules/exporting.js"></script>
+    <script type="text/javascript" src="highcharts/js/modules/heatmap.js"></script>
+    <script type="text/javascript" src="highcharts/js/highcharts-more.js"></script>
+    <script type="text/javascript" src="highcharts/js/modules/solid-gauge.js"></script>
 </head>
-
-
-
-
 <body>
-
-
 <header>
     <ul id="slide-out" class="side-nav fixed collapsible"
         data-collapsible="accordion">
         <li><img src="img/logo.png" class="responsive-img"></li>
-        <li>
-            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+        <li class="grey-text text-darken-1">
+            <div class="collapsible-header waves-effect waves-teal">Synchronize</div>
             <div class="collapsible-body">
                 <ul>
-                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
-                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                    <li><a class="waves-effect waves-teal" href="show.html">sync & show</a></li>
                 </ul>
             </div>
         </li>
-        <li>
-            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+        <li class="grey-text text-darken-1">
+            <div class="collapsible-header waves-effect waves-teal">Activity</div>
             <div class="collapsible-body">
                 <ul>
-                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
-                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                    <li><a class="waves-effect waves-teal" href="activity-list.html">activity-list</a></li>
+                    <li><a class="waves-effect waves-teal" href="activity-manage.html">activity-manage</a></li>
                 </ul>
             </div>
         </li>
-        <li>
-            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+        <li class="grey-text text-darken-1">
+            <div class="collapsible-header waves-effect waves-teal">User</div>
             <div class="collapsible-body">
                 <ul>
-                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
-                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                    <li><a class="waves-effect waves-teal" href="user-homepage.html">home-page</a></li>
+                    <li><a class="waves-effect waves-teal" href="follow-follower.html">friends</a></li>
                 </ul>
             </div>
         </li>
-        <li>
-            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+        <li class="grey-text text-darken-1">
+            <div class="collapsible-header waves-effect waves-teal">Community</div>
             <div class="collapsible-body">
                 <ul>
-                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
-                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                    <li><a class="waves-effect waves-teal" href="community.html">dynamics</a></li>
                 </ul>
             </div>
         </li>
-        <li>
-            <div class="collapsible-header waves-effect waves-teal">Function 1</div>
+        <li class="grey-text text-darken-1">
+            <div class="active collapsible-header waves-effect waves-teal">Stats</div>
             <div class="collapsible-body">
                 <ul>
-                    <li><a class="waves-effect waves-teal" href="#!">function 1</a></li>
-                    <li><a class="waves-effect waves-teal" href="#!">function 2</a></li>
+                    <li class="active"><a class="waves-effect waves-teal" href="analyse.html">stat & analyse</a></li>
                 </ul>
             </div>
         </li>
     </ul>
 </header>
-
-
 <div class="main">
     <nav>
         <ul id="dropdownTop" class="dropdown-content">
@@ -97,6 +94,88 @@
             <a href="#" data-activates="slide-out" class="waves-effect button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h4 class="red-text text-accent-1 banner">Recent week</h4><br>
+                <div class="col m6 s12" style="padding-left: 0">
+                    <div id="container-week" style="min-width: 400px; height: 400px"></div>
+                </div>
+                <div class="col m6 s12">
+                    <center>
+                        <span class="grey-text lighten-2" style="font-size: 1.2rem">Week's goal: 70000 steps</span>
+                        <div id="container-goal" style="min-width: 400px;height: 350px"></div>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="red-text text-accent-1 banner">Monthly Stat</h4><br>
+                <div class="col m7 s12" style="padding-left: 0">
+                    <div id="container-month" style="min-width: 400px; height: 400px"></div>
+                </div>
+                <div class="col m5 s12" style="padding-top: 75px">
+                    <center>
+                        <span class="cyan-text lighten-2" style="font-size: 2rem">During the last month</span><br><br>
+                        <span class="grey-text lighten-2" style="font-size: 1.2rem">Week: 12 days</span><br><br>
+                        <span class="grey-text lighten-2" style="font-size: 1.2rem">Medium: 12days</span><br><br>
+                        <span class="grey-text lighten-2" style="font-size: 1.2rem">Strong: 7days</span>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="red-text text-accent-1 banner">Total analyze</h4><br>
+                <div class="col m7 s12">
+                    <div class="card-panel">
+                        <div class="row" style="margin-bottom: 0">
+                            <div class="col m3">
+                                <center>
+                                    <span class="cyan-text" style="font-size: 1.6rem">3,2904</span>
+                                    <br>
+                                    <span class="grey-text lighten-1">Steps</span>
+                                </center>
+                            </div>
+                            <div class="col m1">
+                                <center>
+                                    <div style="width: 2px; height: 50px;"
+                                         class="grey lighten-2"></div>
+                                </center>
+                            </div>
+                            <div class="col m4">
+                                <center>
+                                    <span class="cyan-text" style="font-size: 1.6rem">12.9<span class="grey-text lighten-2" style="font-size: 0.7rem">/km</span></span>
+
+                                    <br>
+                                    <span class="grey-text lighten-1">Distances</span>
+                                </center>
+                            </div>
+                            <div class="col m1">
+                                <center>
+                                    <div style="width: 2px; height: 50px;"
+                                         class="grey lighten-2"></div>
+                                </center>
+                            </div>
+                            <div class="col m3">
+                                <center>
+                                   <span class="cyan-text" style="font-size: 1.6rem">1458
+                                       <span class="grey-text lighten-2" style="font-size: 0.7rem">/kJ</span>
+                                   </span>
+                                    <br>
+                                    <span class="grey-text lighten-1">Calorie</span>
+                                </center>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col m5 s12 ">
+                    <center>
+                        <span class="grey-text lighten-2">You have beat <span class="cyan-text lighten-2" style="font-size: 1.8rem">58%</span> users in this system</span><br><br>
+                        <span class="grey-text lighten-2">rank <span class="cyan-text lighten-2" style="font-size: 1.8rem">NO.1</span> among your friends</span>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </main>
 </div>
 
 
